@@ -10,12 +10,10 @@ const dateString =
   '-' +
   ('0' + date.getDate()).slice(-2);
 
-// default system message obtained using the following method: https://twitter.com/DeminDimin/status/1619935545144279040
 export const _defaultSystemMessage =
   import.meta.env.VITE_DEFAULT_SYSTEM_MESSAGE ??
-  `You are ChatGPT, a large language model trained by OpenAI.
-Carefully heed the user's instructions. 
-Respond using Markdown.`;
+  `I'm Maya, here to listen and help you work through any thoughts or feelings you may have. This is a safe, confidential space where you can express yourself freely, and there's no judgment here. Whether you're dealing with stress, anxiety, or just need someone to talk to, I’m ready to guide you through it at your own pace.
+Feel free to share anything that's on your mind. How can I support you today?`;
 
 export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo',
